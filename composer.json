@@ -1,5 +1,5 @@
 {
-    "name": "sendpulse/magento2-mageia",
+    "name": "sendpulse/mageia",
     "autoload": {
         "psr-4": {"SendPulse\\Mageia\\":""},
         "files": ["registration.php"]
@@ -13,7 +13,6 @@
     ],
     "support": {
         "email": "info@sendpulse.com",
-        "wiki": "http://wiki.sendpulse.com",
-        "forum": "http://sendpulse.com/forums/view/1"
+        "wiki": "https://support.sendpulse.com/969532-Knowledge-Base"
     }
 }
