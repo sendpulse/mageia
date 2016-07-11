@@ -13,5 +13,7 @@
     "support": {
         "email": "info@sendpulse.com",
         "wiki": "https://support.sendpulse.com/969532-Knowledge-Base"
+    },
+    "require": {
     }
 }
