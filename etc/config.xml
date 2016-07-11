@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * SendPulse_Mageia Magento component
+ *
+ * @category    SendPulse
+ * @package     SendPulse_Mageia
+ * @author      SendPulse Team <info@sendpulse.com>
+ * @copyright   SendPulse (http://sendpulse.com)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <mageia>
+            <general>
+                <active>0</active>
+                <map_fields><![CDATA[a:7:{s:18:\"_1454957956565_565\";a:2:{s:7:\"magento\";s:5:\"fname\";s:9:\"sendpulse\";s:5:\"FNAME\";}s:18:\"_1454957988385_385\";a:2:{s:7:\"magento\";s:5:\"lname\";s:9:\"sendpulse\";s:5:\"LNAME\";}s:18:\"_1454957995557_557\";a:2:{s:7:\"magento\";s:6:\"gender\";s:9:\"sendpulse\";s:6:\"GENDER\";}s:18:\"_1454958007316_316\";a:2:{s:7:\"magento\";s:3:\"dob\";s:9:\"sendpulse\";s:3:\"DOB\";}s:17:\"_1454958013035_35\";a:2:{s:7:\"magento\";s:15:\"billing_address\";s:9:\"sendpulse\";s:7:\"BILLING\";}s:18:\"_1454958020702_702\";a:2:{s:7:\"magento\";s:16:\"shipping_address\";s:9:\"sendpulse\";s:8:\"SHIPPING\";}s:17:\"_1454958026045_45\";a:2:{s:7:\"magento\";s:8:\"group_id\";s:9:\"sendpulse\";s:7:\"GROUPID\";}}]]></map_fields>
+            </general>
+        </mageia>
+    </default>
+</config>

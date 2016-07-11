@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * SendPulse_Mageia Magento component
+ *
+ * @category    SendPulse
+ * @package     SendPulse_Mageia
+ * @author      SendPulse Team <info@sendpulse.com>
+ * @copyright   SendPulse (http://sendpulse.com)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!--type name="Magento\Framework\Module\Updater\SetupFactory">
+        <arguments>
+            <argument name="resourceTypes" xsi:type="array">
+                <item name="mageia_setup" xsi:type="string">Magento\Framework\Module\DataSetup</item>
+            </argument>
+        </arguments>
+    </type-->
+    <type name="SendPulse\Mageia\Model\Logger\Handler\System">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+        </arguments>
+    </type>
+    <type name="SendPulse\Mageia\Model\Logger\SendPulse">
+        <arguments>
+            <argument name="name" xsi:type="string">main</argument>
+            <argument name="handlers"  xsi:type="array">
+                <item name="system" xsi:type="object">SendPulse\Mageia\Model\Logger\Handler\System</item>
+                <item name="debug" xsi:type="object">Magento\Framework\Logger\Handler\Debug</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="SendPulse\Mageia\Model\Logger\Handler\StreamHandler">
+        <arguments>
+            <argument name="stream" xsi:type="string">/var/www/log/Mageia.log</argument>
+        </arguments>
+    </type>
+
+    <type name="Magento\Newsletter\Model\Subscriber">
+        <plugin name="mageia-subscriber" type="SendPulse\Mageia\Model\Subscriber\Plugin" sortOrder="10" disabled="false"/>
+    </type>
+
+    <!--<type name="Magento\Config\Model\Config">
+        <plugin name="mageia-save" type="SendPulse\Mageia\Model\Plugin\Config" sortOrder="10"/>
+    </type>-->
+
+</config>
